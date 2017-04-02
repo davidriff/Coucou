@@ -15,4 +15,4 @@ msg="Hey stranger... Coucou : )"
 
 while True:
 	s.sendto(msg, (host, port))
-	time.sleep(15)
+	time.sleep(10)
