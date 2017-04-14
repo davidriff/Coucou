@@ -10,6 +10,9 @@ If you don't have wireshark, you can run tcpdump:
 
 ``` sudo tcpdump dst 255.255.255.255 and port 65535 -n -c 1 ```
 
+Or netcat...
+``` nc -l -p 65535 -u -v ```
+
 Or you can run this coucou-catcher in python:
 
 ``` python
