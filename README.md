@@ -13,6 +13,13 @@ If you don't have wireshark, you can run tcpdump:
 Or you can run this coucou-catcher in python:
 
 ``` python
-print "hi"
+#!/usr/bin/env python
+
+import socket
+
+s=socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+s.bind(('',65535))
+m=s.recvfrom(1024)
+print m[1][0]
 
 ```
