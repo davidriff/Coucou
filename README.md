@@ -6,6 +6,12 @@ Whenever my DHCP server changes the IP address of my raspberry-Pi I have to look
 
 This little script runs at boot and sends broadcast messages every 10 seconds. So you just have to turn on wireshark and wait for the broadcast message to reach you.
 
+# Install
+
+Just insert the path to coucou.py in your crontab.
+
+# Receive coucou message
+
 If you don't have wireshark, you can run tcpdump:
 
 ``` sudo tcpdump dst 255.255.255.255 and port 65535 -n -c 1 ```
